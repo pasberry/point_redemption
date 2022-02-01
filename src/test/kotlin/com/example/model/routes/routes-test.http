@@ -1,0 +1,57 @@
+POST http://localhost:8080/points/add/transaction
+Content-Type: application/json
+
+{
+  "payer": "DANNON",
+  "points": 300,
+  "timestamp": "2020-10-31T10:00:00Z"
+}
+
+###
+POST http://localhost:8080/points/add/transaction
+Content-Type: application/json
+
+{
+  "payer": "MILLER COORS",
+  "points": 10000,
+  "timestamp": "2020-11-01T14:00:00Z"
+}
+
+###
+POST http://localhost:8080/points/add/transaction
+Content-Type: application/json
+
+{
+  "payer": "DANNON",
+  "points": -200,
+  "timestamp": "2020-10-31T15:00:00Z"
+}
+
+###
+POST http://localhost:8080/points/add/transaction
+Content-Type: application/json
+
+{
+  "payer": "UNILEVER",
+  "points": 200,
+  "timestamp": "2020-10-31T11:00:00Z"
+}
+
+###
+POST http://localhost:8080/points/add/transaction
+Content-Type: application/json
+
+{
+  "payer" : "DANNON",
+  "points" : 1000,
+  "timestamp": "2020-11-02T14:00:00Z"
+}
+
+###
+POST http://localhost:8080/points/spend
+Content-Type: application/json
+
+{"points": 5000}
+
+###
+GET http://localhost:8080/points
